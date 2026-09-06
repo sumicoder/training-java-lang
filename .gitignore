@@ -1,0 +1,45 @@
+# ============================================================
+# Java 学習プロジェクト用 .gitignore
+# ソース（.java）は残し、コンパイル成果物・OS/IDEの一時ファイルを除外する
+# ============================================================
+
+# --- コンパイル成果物 ---
+# javac が生成するバイトコード。ソースから再生成できるためコミットしない
+*.class
+
+# パッケージ化された配布物
+*.jar
+*.war
+*.ear
+*.nar
+
+# 一般的なビルド出力ディレクトリ（後から Maven / Gradle / IDE を使う場合に備える）
+bin/
+out/
+build/
+target/
+.gradle/
+
+# --- JVM / 実行時ログ ---
+*.log
+hs_err_pid*
+replay_pid*
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- IDE ---
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code / Cursor
+# 個人設定は除外し、デバッグ用 launch.json だけ共有する
+.vscode/*
+!.vscode/launch.json
