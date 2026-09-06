@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StuSample",
+      "request": "launch",
+      "mainClass": "StuSample",
+      "projectName": "training-java-lang_c676ede6"
+    },
+    {
+      "type": "java",
       "name": "Cast",
       "request": "launch",
       "mainClass": "Cast",
