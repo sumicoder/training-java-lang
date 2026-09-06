@@ -17,5 +17,14 @@ public class StuSample {
     StudentConstructor studentConstructor = new StudentConstructor("鈴木次郎", 80, 60);
     studentConstructor.display();
     System.out.println("平均点：" + studentConstructor.getAverage());
+    System.out.println("--------------------------------");
+    System.out.println("========== 学生の成績管理（静的） ==========");
+    StudentStatic.display();
+    new StudentStatic("山田太郎");
+    StudentStatic.display();
+    new StudentStatic("佐藤花子");
+    StudentStatic.display();
+    new StudentStatic("鈴木次郎");
+    StudentStatic.display();
   }
 }
