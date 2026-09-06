@@ -8,9 +8,14 @@ public class StuSample {
     System.out.println("平均点：" + student.getAverage());
     System.out.println("--------------------------------");
     System.out.println("========== 学生の成績管理（オーバーロード） ==========");
-    Student student2 = new Student();
-    student2.setData("佐藤花子", 90, 50);
-    student2.display();
-    System.out.println("平均点：" + student2.getAverage());
+    Student studentOverload = new Student();
+    studentOverload.setData("佐藤花子", 90, 50);
+    studentOverload.display();
+    System.out.println("平均点：" + studentOverload.getAverage());
+    System.out.println("--------------------------------");
+    System.out.println("========== 学生の成績管理（コンストラクタ） ==========");
+    StudentConstructor studentConstructor = new StudentConstructor("鈴木次郎", 80, 60);
+    studentConstructor.display();
+    System.out.println("平均点：" + studentConstructor.getAverage());
   }
 }
