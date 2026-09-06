@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Cast",
+      "request": "launch",
+      "mainClass": "Cast",
+      "args": "100"
+    },
+    {
+      "type": "java",
       "name": "Operator",
       "request": "launch",
       "mainClass": "Operator",
@@ -22,7 +29,7 @@
       "type": "java",
       "name": "HelloWorld",
       "request": "launch",
-      "mainClass": "HelloWorld",
+      "mainClass": "HelloWorld"
     }
   ]
 }
