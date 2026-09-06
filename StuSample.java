@@ -26,5 +26,15 @@ public class StuSample {
     StudentStatic.display();
     new StudentStatic("鈴木次郎");
     StudentStatic.display();
+    System.out.println("--------------------------------");
+    System.out.println("========== 学生の成績管理（カプセル化） ==========");
+    StudentCapsule studentCapsule = new StudentCapsule("山田太郎", 80);
+    studentCapsule.display();
+    studentCapsule.setScore(90);
+    // studentCapsule.score = 101; // privateなので外部からアクセスできない
+    studentCapsule.display();
+    studentCapsule.setScore(101);
+    studentCapsule.display();
+    System.out.println("--------------------------------");
   }
 }
