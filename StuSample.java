@@ -36,12 +36,26 @@ public class StuSample {
     // studentCapsule.setScore(101);
     // studentCapsule.display();
     // System.out.println("--------------------------------");
-    System.out.println("========== 学生の成績管理（継承） ==========");
-    PersonExtends studentExtends = new PersonExtends();
-    studentExtends.setName("山田太郎");
-    studentExtends.display();
-    studentExtends.setStuNo(123456);
-    studentExtends.displayStuNo();
+    // System.out.println("========== 学生の成績管理（継承） ==========");
+    // PersonExtends studentExtends = new PersonExtends();
+    // studentExtends.setName("山田太郎");
+    // studentExtends.display(); // 継承前のdisplayメソッドを呼び出す
+    // studentExtends.setStuNo(123456);
+    // studentExtends.displayStuNo(); // 学籍番号だけ
+    // System.out.println("--------------------------------");
+    // System.out.println("========== 学生の成績管理（オーバーライド） ==========");
+    // PersonExtends studentExtendsOverride = new PersonExtends();
+    // studentExtendsOverride.setName("山田太郎");
+    // studentExtendsOverride.setStuNo(123456);
+    // studentExtendsOverride.display(); // 名前と学籍番号
+    // System.out.println("--------------------------------");
+    System.out.println("========== 学生の成績管理（コンストラクタ） ==========");
+    PersonExtends studentExtendsConstructor1 = new PersonExtends();
+    studentExtendsConstructor1.display(); // 名前：、学籍番号：0
+    PersonExtends studentExtendsConstructor2 = new PersonExtends("山田太郎");
+    studentExtendsConstructor2.display(); // 名前：山田太郎、学籍番号：0
+    PersonExtends studentExtendsConstructor3 = new PersonExtends("山田太郎", 123456);
+    studentExtendsConstructor3.display(); // 名前：山田太郎、学籍番号：123456
     System.out.println("--------------------------------");
   }
 }
