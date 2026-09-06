@@ -6,24 +6,23 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Operator",
+      "request": "launch",
+      "mainClass": "Operator",
+      "args": "10 20"
+    },
+    {
+      "type": "java",
       "name": "VariousOutput",
       "request": "launch",
       "mainClass": "VariousOutput",
-      "projectName": "training-java-lang_c676ede6"
+      "args": "args01 args02"
     },
     {
       "type": "java",
       "name": "HelloWorld",
       "request": "launch",
       "mainClass": "HelloWorld",
-      "projectName": "training-java-lang_c676ede6"
-    },
-    {
-      "type": "java",
-      "name": "Current File",
-      "request": "launch",
-      "mainClass": "${file}",
-      "args": "args01 args02"
     }
   ]
 }
