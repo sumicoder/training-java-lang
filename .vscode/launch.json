@@ -6,6 +6,14 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Divide",
+      "request": "launch",
+      "mainClass": "Divide",
+      "projectName": "training-java-lang_c676ede6",
+      "args": "10 3 3"
+    },
+    {
+      "type": "java",
       "name": "StuSample",
       "request": "launch",
       "mainClass": "StuSample",

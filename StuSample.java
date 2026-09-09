@@ -1,4 +1,4 @@
-import StudentPackage.*;
+import StudentPackage.StudentPack;
 public class StuSample {
   public static void main(String[] args) {
     // System.out.println("========== 学生の成績管理 ==========");
