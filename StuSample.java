@@ -1,3 +1,4 @@
+import StudentPackage.*;
 public class StuSample {
   public static void main(String[] args) {
     // System.out.println("========== 学生の成績管理 ==========");
@@ -92,17 +93,19 @@ public class StuSample {
     // studentPolymorphism3.display();
     // studentPolymorphism3.practice();
     // System.out.println("--------------------------------");
-    System.out.println("========== インターフェース ==========");
-    StudentInterface studentInterface = new StudentInterface("山田太郎");
-    studentInterface.displayEnglish();
-    System.out.println("--------------------------------");
-    TandF tandF = new TandF("陸上競技部");
-    tandF.practice();
-    tandF.displayEnglish();
-    System.out.println("--------------------------------");
-    Football football = new Football("サッカー部");
-    football.practice();
-    football.displayEnglish();
-    System.out.println("--------------------------------");
+    // System.out.println("========== インターフェース ==========");
+    // StudentInterface studentInterface = new StudentInterface("山田太郎");
+    // studentInterface.displayEnglish();
+    // System.out.println("--------------------------------");
+    // TandF tandF = new TandF("陸上競技部");
+    // tandF.practice();
+    // tandF.displayEnglish();
+    // System.out.println("--------------------------------");
+    // Football football = new Football("サッカー部");
+    // football.practice();
+    // football.displayEnglish();
+    // System.out.println("--------------------------------");
+    StudentPack studentPackage = new StudentPack("山田太郎");
+    studentPackage.display();
   }
 }
