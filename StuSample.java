@@ -67,14 +67,30 @@ public class StuSample {
     // PersonFinalExtends studentFinalExtends3 = new PersonFinalExtends("鈴木次郎", BASE_STU_NO + 2);
     // studentFinalExtends3.display(); // 名前：鈴木次郎、学籍番号：100002
     // System.out.println("--------------------------------");
-    System.out.println("========== キャスト ==========");
-    PersonExtends personCast = new PersonExtends("山田太郎");
-    Person psnCast = personCast;
-    PersonExtends personCast2 = (PersonExtends) psnCast;
-    psnCast.display();
-    // psnCast.setStuNo(999999);
-    personCast2.setStuNo(999999);
-    personCast2.display();
+    // System.out.println("========== キャスト ==========");
+    // PersonExtends personCast = new PersonExtends("山田太郎");
+    // Person psnCast = personCast;
+    // PersonExtends personCast2 = (PersonExtends) psnCast;
+    // psnCast.display();
+    // // psnCast.setStuNo(999999);
+    // personCast2.setStuNo(999999);
+    // personCast2.display();
+    // System.out.println("--------------------------------");
+    System.out.println("========== 抽象クラス ==========");
+    TandF tandF = new TandF("陸上競技部");
+    Football football = new Football("サッカー部");
+    Baseball baseball = new Baseball("野球部");
+    StudentPolymorphism studentPolymorphism1 = new StudentPolymorphism("山田太郎", tandF);
+    studentPolymorphism1.display();
+    studentPolymorphism1.practice();
+    System.out.println("--------------------------------");
+    StudentPolymorphism studentPolymorphism2 = new StudentPolymorphism("佐藤花子", football);
+    studentPolymorphism2.display();
+    studentPolymorphism2.practice();
+    System.out.println("--------------------------------");
+    StudentPolymorphism studentPolymorphism3 = new StudentPolymorphism("鈴木次郎", baseball);
+    studentPolymorphism3.display();
+    studentPolymorphism3.practice();
     System.out.println("--------------------------------");
   }
 }
